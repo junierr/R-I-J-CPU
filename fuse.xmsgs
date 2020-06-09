@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/ise/exp10/DECODER.v" Line 33: Redeclaration of ansi port <arg fmt="%s" index="1">OP</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/ise/exp10/DECODER.v" Line 34: Redeclaration of ansi port <arg fmt="%s" index="1">ZF</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/ise/exp10/DECODER.v" Line 35: Redeclaration of ansi port <arg fmt="%s" index="1">imm_s</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/ise/exp10/DECODER.v" Line 36: Redeclaration of ansi port <arg fmt="%s" index="1">w_r_s</arg> is not allowed
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="751" delta="unknown" >"C:/ise/exp10/DECODER.v" Line 37: Redeclaration of ansi port <arg fmt="%s" index="1">ALU_OP</arg> is not allowed
+</msg>
+
+</messages>
+

@@ -1,0 +1,314 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2L
+-n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf top.ucf
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc7a100t,fgg484,C,-2L (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+rst         |    4.394(F)|      SLOW  |    2.151(F)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED<0>      |        19.151(R)|      SLOW  |         5.668(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.385(F)|      SLOW  |         4.132(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<1>      |        21.549(R)|      SLOW  |         5.915(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        20.021(F)|      SLOW  |         4.000(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<2>      |        17.738(R)|      SLOW  |         5.219(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        15.728(F)|      SLOW  |         4.150(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<3>      |        18.326(R)|      SLOW  |         5.771(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.316(F)|      SLOW  |         4.042(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<4>      |        18.171(R)|      SLOW  |         5.298(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.468(F)|      SLOW  |         3.874(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<5>      |        18.107(R)|      SLOW  |         5.409(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.084(F)|      SLOW  |         4.251(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<6>      |        17.730(R)|      SLOW  |         5.566(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.192(F)|      SLOW  |         4.381(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<7>      |        18.713(R)|      SLOW  |         5.773(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.226(F)|      SLOW  |         4.613(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<8>      |        18.818(R)|      SLOW  |         5.737(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.329(F)|      SLOW  |         4.255(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<9>      |        19.355(R)|      SLOW  |         5.928(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.827(F)|      SLOW  |         4.121(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<10>     |        18.312(R)|      SLOW  |         5.263(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.784(F)|      SLOW  |         4.185(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<11>     |        19.051(R)|      SLOW  |         5.811(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.523(F)|      SLOW  |         4.137(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<12>     |        18.429(R)|      SLOW  |         5.638(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.901(F)|      SLOW  |         4.064(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<13>     |        18.906(R)|      SLOW  |         5.455(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.302(F)|      SLOW  |         4.007(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<14>     |        18.851(R)|      SLOW  |         5.620(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.463(F)|      SLOW  |         4.000(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<15>     |        19.203(R)|      SLOW  |         5.804(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.642(F)|      SLOW  |         4.087(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<16>     |        18.507(R)|      SLOW  |         5.694(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.484(F)|      SLOW  |         4.020(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<17>     |        18.214(R)|      SLOW  |         5.326(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.668(F)|      SLOW  |         3.752(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<18>     |        17.646(R)|      SLOW  |         5.289(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.063(F)|      SLOW  |         3.857(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<19>     |        18.261(R)|      SLOW  |         5.323(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.700(F)|      SLOW  |         3.896(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<20>     |        18.489(R)|      SLOW  |         5.569(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.794(F)|      SLOW  |         4.083(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<21>     |        19.069(R)|      SLOW  |         5.686(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.664(F)|      SLOW  |         4.016(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<22>     |        19.259(R)|      SLOW  |         6.030(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.512(F)|      SLOW  |         4.014(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<23>     |        18.975(R)|      SLOW  |         5.860(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.414(F)|      SLOW  |         4.071(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<24>     |        18.377(R)|      SLOW  |         5.625(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.816(F)|      SLOW  |         3.864(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<25>     |        19.145(R)|      SLOW  |         5.758(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.740(F)|      SLOW  |         4.182(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<26>     |        18.674(R)|      SLOW  |         5.842(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        16.896(F)|      SLOW  |         4.407(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<27>     |        19.183(R)|      SLOW  |         5.714(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.622(F)|      SLOW  |         4.078(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<28>     |        19.545(R)|      SLOW  |         5.776(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.984(F)|      SLOW  |         4.112(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<29>     |        19.513(R)|      SLOW  |         5.812(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.952(F)|      SLOW  |         4.214(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<30>     |        19.307(R)|      SLOW  |         5.659(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.746(F)|      SLOW  |         4.319(F)|      FAST  |clk_BUFGP         |   0.000|
+LED<31>     |        18.659(R)|      SLOW  |         5.577(R)|      FAST  |clk_BUFGP         |   0.000|
+            |        17.098(F)|      SLOW  |         4.312(F)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock clka to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED<0>      |        11.086(R)|      SLOW  |         4.068(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<1>      |        12.409(R)|      SLOW  |         4.647(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<2>      |        11.184(R)|      SLOW  |         4.134(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<3>      |        11.242(R)|      SLOW  |         4.140(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<4>      |        11.248(R)|      SLOW  |         4.152(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<5>      |        11.573(R)|      SLOW  |         4.267(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<6>      |        11.804(R)|      SLOW  |         4.392(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<7>      |        11.956(R)|      SLOW  |         4.518(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<8>      |        11.966(R)|      SLOW  |         4.551(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<9>      |        12.001(R)|      SLOW  |         4.515(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<10>     |        11.815(R)|      SLOW  |         4.433(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<11>     |        11.427(R)|      SLOW  |         4.267(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<12>     |        11.543(R)|      SLOW  |         4.276(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<13>     |        12.158(R)|      SLOW  |         4.538(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<14>     |        11.446(R)|      SLOW  |         4.296(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<15>     |        11.334(R)|      SLOW  |         4.267(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<16>     |        11.414(R)|      SLOW  |         4.235(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<17>     |        11.206(R)|      SLOW  |         4.074(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<18>     |        11.574(R)|      SLOW  |         4.281(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<19>     |        11.345(R)|      SLOW  |         4.222(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<20>     |        11.937(R)|      SLOW  |         4.504(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<21>     |        11.472(R)|      SLOW  |         4.309(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<22>     |        11.561(R)|      SLOW  |         4.349(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<23>     |        11.776(R)|      SLOW  |         4.519(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<24>     |        11.437(R)|      SLOW  |         4.257(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<25>     |        11.501(R)|      SLOW  |         4.249(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<26>     |        11.715(R)|      SLOW  |         4.410(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<27>     |        11.773(R)|      SLOW  |         4.424(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<28>     |        12.103(R)|      SLOW  |         4.580(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<29>     |        11.563(R)|      SLOW  |         4.309(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<30>     |        11.541(R)|      SLOW  |         4.360(R)|      FAST  |clka_BUFGP        |   0.000|
+LED<31>     |        12.136(R)|      SLOW  |         4.590(R)|      FAST  |clka_BUFGP        |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |    1.951|   11.119|    9.553|
+clka           |         |         |    6.267|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clka
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   11.398|    9.371|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+change1        |LED<0>         |    8.540|
+change1        |LED<1>         |    7.904|
+change1        |LED<2>         |    9.247|
+change1        |LED<3>         |    8.594|
+change1        |LED<4>         |    8.831|
+change1        |LED<5>         |    9.085|
+change1        |LED<6>         |    9.027|
+change1        |LED<7>         |    9.808|
+change1        |LED<8>         |    9.364|
+change1        |LED<9>         |    9.470|
+change1        |LED<10>        |    9.642|
+change1        |LED<11>        |    9.118|
+change1        |LED<12>        |    9.194|
+change1        |LED<13>        |    8.664|
+change1        |LED<14>        |    9.062|
+change1        |LED<15>        |    9.100|
+change1        |LED<16>        |    8.678|
+change1        |LED<17>        |    9.012|
+change1        |LED<18>        |    9.291|
+change1        |LED<19>        |    9.235|
+change1        |LED<20>        |    9.875|
+change1        |LED<21>        |    9.297|
+change1        |LED<22>        |    9.789|
+change1        |LED<23>        |    9.730|
+change1        |LED<24>        |    9.430|
+change1        |LED<25>        |    8.960|
+change1        |LED<26>        |    9.423|
+change1        |LED<27>        |    9.528|
+change1        |LED<28>        |    9.738|
+change1        |LED<29>        |    9.007|
+change1        |LED<30>        |   10.137|
+change1        |LED<31>        |    9.686|
+change2        |LED<0>         |    9.317|
+change2        |LED<1>         |   10.458|
+change2        |LED<2>         |    9.950|
+change2        |LED<3>         |    9.297|
+change2        |LED<4>         |    9.534|
+change2        |LED<5>         |    9.672|
+change2        |LED<6>         |    9.730|
+change2        |LED<7>         |   10.511|
+change2        |LED<8>         |   10.067|
+change2        |LED<9>         |   10.173|
+change2        |LED<10>        |   10.345|
+change2        |LED<11>        |    9.821|
+change2        |LED<12>        |    9.897|
+change2        |LED<13>        |    9.367|
+change2        |LED<14>        |    9.765|
+change2        |LED<15>        |    9.803|
+change2        |LED<16>        |    9.381|
+change2        |LED<17>        |    9.715|
+change2        |LED<18>        |    9.994|
+change2        |LED<19>        |    9.938|
+change2        |LED<20>        |   10.284|
+change2        |LED<21>        |   10.058|
+change2        |LED<22>        |   10.492|
+change2        |LED<23>        |   10.330|
+change2        |LED<24>        |   10.133|
+change2        |LED<25>        |    9.663|
+change2        |LED<26>        |   10.012|
+change2        |LED<27>        |   10.231|
+change2        |LED<28>        |   10.441|
+change2        |LED<29>        |    9.710|
+change2        |LED<30>        |   10.840|
+change2        |LED<31>        |   10.310|
+change3        |LED<0>         |    9.040|
+change3        |LED<1>         |    9.288|
+change3        |LED<2>         |    9.747|
+change3        |LED<3>         |    9.094|
+change3        |LED<4>         |    9.331|
+change3        |LED<5>         |    9.469|
+change3        |LED<6>         |    9.527|
+change3        |LED<7>         |   10.308|
+change3        |LED<8>         |    9.864|
+change3        |LED<9>         |    9.970|
+change3        |LED<10>        |   10.142|
+change3        |LED<11>        |    9.618|
+change3        |LED<12>        |    9.694|
+change3        |LED<13>        |    9.164|
+change3        |LED<14>        |    9.562|
+change3        |LED<15>        |    9.600|
+change3        |LED<16>        |    9.178|
+change3        |LED<17>        |    9.512|
+change3        |LED<18>        |    9.791|
+change3        |LED<19>        |    9.735|
+change3        |LED<20>        |   10.081|
+change3        |LED<21>        |    9.773|
+change3        |LED<22>        |   10.289|
+change3        |LED<23>        |   10.127|
+change3        |LED<24>        |    9.930|
+change3        |LED<25>        |    9.460|
+change3        |LED<26>        |    9.809|
+change3        |LED<27>        |   10.028|
+change3        |LED<28>        |   10.238|
+change3        |LED<29>        |    9.507|
+change3        |LED<30>        |   10.637|
+change3        |LED<31>        |   10.107|
+change4        |LED<0>         |    9.104|
+change4        |LED<1>         |    8.468|
+change4        |LED<2>         |    9.811|
+change4        |LED<3>         |    9.158|
+change4        |LED<4>         |    9.395|
+change4        |LED<5>         |    9.533|
+change4        |LED<6>         |    9.591|
+change4        |LED<7>         |   10.372|
+change4        |LED<8>         |    9.928|
+change4        |LED<9>         |   10.034|
+change4        |LED<10>        |   10.206|
+change4        |LED<11>        |    9.682|
+change4        |LED<12>        |    9.758|
+change4        |LED<13>        |    9.228|
+change4        |LED<14>        |    9.626|
+change4        |LED<15>        |    9.664|
+change4        |LED<16>        |    9.242|
+change4        |LED<17>        |    9.576|
+change4        |LED<18>        |    9.855|
+change4        |LED<19>        |    9.799|
+change4        |LED<20>        |   10.145|
+change4        |LED<21>        |    9.837|
+change4        |LED<22>        |   10.353|
+change4        |LED<23>        |   10.191|
+change4        |LED<24>        |    9.994|
+change4        |LED<25>        |    9.524|
+change4        |LED<26>        |    9.873|
+change4        |LED<27>        |   10.092|
+change4        |LED<28>        |   10.302|
+change4        |LED<29>        |    9.571|
+change4        |LED<30>        |   10.701|
+change4        |LED<31>        |   10.171|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Jun 05 18:35:07 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5022 MB
+
+
+

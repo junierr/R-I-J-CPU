@@ -1,0 +1,146 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Jun 05 18:22:34 2020
+# Process ID: 10940
+# Log file: C:/ise/exp10/planAhead_run_1/planAhead.log
+# Journal file: C:/ise/exp10/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/ise/exp10/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {LED[31]} {LED[30]} {LED[29]} {LED[28]} {LED[27]} {LED[26]} {LED[25]} {LED[24]} {LED[23]} {LED[22]} {LED[21]} {LED[20]} {LED[19]} {LED[18]} {LED[17]} {LED[16]} {LED[15]} {LED[14]} {LED[13]} {LED[12]} {LED[11]} {LED[10]} {LED[9]} {LED[8]} {LED[7]} {LED[6]} {LED[5]} {LED[4]} {LED[3]} {LED[2]} {LED[1]} {LED[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list change2]]
+set_property iostandard LVCMOS18 [get_ports [list change1]]
+set_property iostandard LVCMOS18 [get_ports [list change3]]
+set_property iostandard LVCMOS18 [get_ports [list change4]]
+set_property iostandard LVCMOS18 [get_ports [list clk]]
+set_property iostandard LVCMOS18 [get_ports [list clka]]
+set_property iostandard LVCMOS18 [get_ports [list rst]]
+set_property pulltype PULLDOWN [get_ports [list change1]]
+set_property pulltype PULLDOWN [get_ports [list change2]]
+set_property pulltype PULLDOWN [get_ports [list change3]]
+set_property pulltype PULLDOWN [get_ports [list change4]]
+set_property pulltype PULLDOWN [get_ports [list clk]]
+set_property pulltype PULLDOWN [get_ports [list clka]]
+set_property pulltype PULLDOWN [get_ports [list rst]]
+startgroup
+set_property package_pin H4 [get_ports clka]
+endgroup
+set_property package_pin "" [get_ports [list  change1]]
+startgroup
+set_property package_pin R4 [get_ports rst]
+endgroup
+startgroup
+set_property package_pin AA4 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin AB6 [get_ports change1]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports change2]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports change3]
+endgroup
+save_constraints
+startgroup
+set_property package_pin AA8 [get_ports change4]
+endgroup
+startgroup
+set_property package_pin R1 [get_ports {LED[31]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {LED[30]}]
+endgroup
+startgroup
+set_property package_pin P1 [get_ports {LED[29]}]
+endgroup
+startgroup
+set_property package_pin N2 [get_ports {LED[28]}]
+endgroup
+startgroup
+set_property package_pin M1 [get_ports {LED[27]}]
+endgroup
+startgroup
+set_property package_pin M2 [get_ports {LED[26]}]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports {LED[25]}]
+endgroup
+startgroup
+set_property package_pin J2 [get_ports {LED[24]}]
+endgroup
+startgroup
+set_property package_pin G1 [get_ports {LED[23]}]
+endgroup
+startgroup
+set_property package_pin E1 [get_ports {LED[22]}]
+endgroup
+startgroup
+set_property package_pin D2 [get_ports {LED[21]}]
+endgroup
+startgroup
+set_property package_pin A1 [get_ports {LED[20]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {LED[19]}]
+endgroup
+startgroup
+set_property package_pin G3 [get_ports {LED[18]}]
+endgroup
+startgroup
+set_property package_pin K4 [get_ports {LED[17]}]
+endgroup
+startgroup
+set_property package_pin G4 [get_ports {LED[16]}]
+endgroup
+startgroup
+set_property package_pin K1 [get_ports {LED[15]}]
+endgroup
+startgroup
+set_property package_pin J1 [get_ports {LED[14]}]
+endgroup
+startgroup
+set_property package_pin H2 [get_ports {LED[13]}]
+endgroup
+startgroup
+set_property package_pin G2 [get_ports {LED[12]}]
+endgroup
+startgroup
+set_property package_pin F1 [get_ports {LED[11]}]
+endgroup
+startgroup
+set_property package_pin E2 [get_ports {LED[10]}]
+endgroup
+startgroup
+set_property package_pin D1 [get_ports {LED[9]}]
+endgroup
+startgroup
+set_property package_pin B1 [get_ports {LED[8]}]
+endgroup
+startgroup
+set_property package_pin B2 [get_ports {LED[7]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports {LED[6]}]
+endgroup
+startgroup
+set_property package_pin M3 [get_ports {LED[5]}]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports {LED[4]}]
+endgroup
+startgroup
+set_property package_pin H3 [get_ports {LED[3]}]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports {LED[2]}]
+endgroup
+startgroup
+set_property package_pin L4 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin J4 [get_ports {LED[0]}]
+endgroup
+save_constraints

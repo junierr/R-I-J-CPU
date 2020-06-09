@@ -1,0 +1,7 @@
+verilog work "ipcore_dir/ROM_1.v"
+verilog work "RegFile.v"
+verilog work "READ.v"
+verilog work "ipcore_dir/RAM_1.v"
+verilog work "DECODER.v"
+verilog work "ALU.v"
+verilog work "CPU.v"
